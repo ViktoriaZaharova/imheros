@@ -1,0 +1,141 @@
+@import "vars"
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 992px)
+  .footer-col
+    padding: 0 10px
+    &:first-child
+      padding: 0 10px 0 0
+    &:last-child
+      padding: 0 0 0 10px
+
+  .btn-scroll-top
+    right: 20px
+    bottom: 40px
+
+  .sidebar
+    width: 320px
+
+  .content
+    width: calc(100% - 320px)
+
+  .article-box__title
+    font-size: 26px
+
+  .title-line h3
+    font-size: 16px
+
+
+
+@media only screen and (max-width: 768px)
+  .header-top
+    padding: 10px 0
+    .language-box, .date-current, .list-social
+      display: none
+
+  .box-pc
+    display: none
+
+  .box-mobile
+    display: flex
+    flex-wrap: wrap
+
+  .btn-burger
+    display: flex
+
+  .header-bottom
+    padding: 10px 0
+    .logo
+      display: none
+
+  .form-search
+    width: 100%
+    max-width: 895px
+    margin: 0 auto 20px
+
+  .article-wrapper
+    margin: 0 0 30px
+
+  .date-current
+    padding: 0
+    border: none
+    margin: 0
+
+  .content
+    width: 100%
+    padding: 0
+
+  .sidebar
+    padding: 20px 0 0
+    margin: 0 0 40px
+    width: 100%
+    &:before
+      left: 0
+      top: 0
+      width: 100%
+      height: 1px
+
+  .logo
+    max-width: 250px
+
+  .home
+    padding: 30px 0 0
+
+  .footer-col
+    width: 100%
+    padding: 0
+    margin: 0 0 30px
+    &:first-child
+      padding: 0
+    &:last-child
+      padding: 0
+
+  .footer-item
+    margin: 0 0 30px
+
+  .title-line
+    margin: 0 0 20px
+
+  footer
+    padding: 40px 0 30px
+
+  .footer-bottom
+    text-align: center
+    .container
+      flex-direction: column
+      align-items: center
+    .menu
+      margin: 20px auto 0
+      justify-content: center
+    .logo
+      margin: 0 auto
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  .subscribe-box h4
+    font-size: 20px
+    margin: 0 auto 20px
+
+  .news-card__img
+    width: 100px
+    height: 60px
+
+  .news-card__body
+    width: calc(100% - 100px)
+    padding: 0 0 0 15px
+
+  .news-card__title
+    margin: 0 0 10px
+
+  .logo
+    max-width: 200px
+
+  .article-wrapper__head h3
+    padding: 10px 15px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
