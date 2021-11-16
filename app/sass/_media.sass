@@ -2,11 +2,50 @@
 
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 1200px)
+  .solider-box
+    padding: 0 15px
+
+  .row
+    margin: 0 -15px
+
+  .gallery-slider__item
+    height: 150px
+    width: 100%
+
+  .gallery-slider
+    .slick-slide
+      padding: 0 5px
+
+
+  .history-article-box .box-text
+    margin: 30px 0 0
+    line-height: 1.7
+
+  .share
+    margin: 40px 0 0
+
+  .page-news
+    .news-card
+      font-size: 12px
+    .news-card__img
+      width: 250px
+      height: 180px
+    .news-card__body
+      width: calc(100% - 250px)
+      padding: 0 0 0 20px
+    .news-card__title
+      font-size: 18px
+
+
+
 @media only screen and (max-width: 992px)
   .footer-col
     padding: 0 10px
+
     &:first-child
       padding: 0 10px 0 0
+
     &:last-child
       padding: 0 0 0 10px
 
@@ -26,11 +65,52 @@
   .title-line h3
     font-size: 16px
 
+  .solider-box
+    width: 25%
 
+    &__head
+      margin: 0 0 20px
+
+  h1
+    margin: 0 0 30px
+
+  .history-box__title
+    font-size: 18px
+    margin: 0 0 20px
+
+  .history-box__body
+    padding: 10px 0 0
+
+  .history-box__img
+    height: 180px
+
+  .gallery-slider
+    .slick-arrow
+      position: absolute
+      right: 10px
+      top: 10px
+      z-index: 1
+    .slick-prev
+      right: 30px
+
+  .page-news
+    .news-card__body
+      width: calc(100% - 180px)
+    .news-card__img
+      width: 180px
+      height: 150px
+
+  .page-history .content
+    padding: 0 0 30px
+
+  .page-news
+    .content
+      padding: 0
 
 @media only screen and (max-width: 768px)
   .header-top
     padding: 10px 0
+
     .language-box, .date-current, .list-social
       display: none
 
@@ -46,6 +126,7 @@
 
   .header-bottom
     padding: 10px 0
+
     .logo
       display: none
 
@@ -70,6 +151,7 @@
     padding: 20px 0 0
     margin: 0 0 40px
     width: 100%
+
     &:before
       left: 0
       top: 0
@@ -86,8 +168,10 @@
     width: 100%
     padding: 0
     margin: 0 0 30px
+
     &:first-child
       padding: 0
+
     &:last-child
       padding: 0
 
@@ -102,17 +186,51 @@
 
   .footer-bottom
     text-align: center
+
     .container
       flex-direction: column
       align-items: center
+
     .menu
       margin: 20px auto 0
       justify-content: center
+
     .logo
       margin: 0 auto
 
+  .error
+    padding: 60px 0 100px
+    -webkit-background-size: 600px
+    background-size: 600px
+
+    h1
+      font-size: 100px
+      margin: 0 auto 40px
+
+    .subtitle
+      font-size: 22px
+
+  .solider-box
+    width: 33.3%
+
+  .pagination
+    margin: 10px 0 30px
+
+  .banner-article
+    margin: 0 0 30px
+
+  .history-article-box__img
+    margin: 30px 0
+
+  .share
+    margin: 30px 0 0
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .solider-box
+    width: 50%
+    margin: 0 0 30px
+
 @media only screen and (max-width: 480px)
   .subscribe-box h4
     font-size: 20px
@@ -135,7 +253,64 @@
   .article-wrapper__head h3
     padding: 10px 15px
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+  .error
+    -webkit-background-size: 300px
+    background-size: 300px
 
+  .col-6
+    width: 100%
+
+  .page-history
+    .content
+      padding-bottom: 40px
+
+  .page-news
+    .news-card
+      flex-direction: column
+      align-items: flex-start
+    .news-card__img
+      width: 100%
+      height: 200px
+      margin: 0 auto 20px
+    .news-card__body
+      width: 100%
+      padding: 0
+    .news-card__date
+      padding: 10px 0 0
+      margin: 10px 0 0
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .solider-box
+    width: 100%
+    margin: 0
+    padding: 10px 15px
+    border-bottom: 1px solid #e1e2e3
+
+    &:last-child
+      border: none
+
+    &__body
+      display: none
+      padding: 0 10px
+      margin: 10px 0 0
+
+    &__head
+      margin: 0
+
+  .solider-menu
+    li
+      border-bottom: 1px solid #e1e2e3
+
+      &:last-child
+        border: none
+
+      a
+        padding: 10px
+
+
+  .btn-toggle-plus
+    display: flex
+
+  .breadcrumb
+    margin: 20px 0

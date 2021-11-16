@@ -171,6 +171,16 @@ button, .btn
   color: #919191
   line-height: 1.5
 
+h1
+  width: 100%
+  font-weight: bold
+  font-size: 30px
+  color: #010101
+  margin: 0 0 49px
+
+.w-100
+  width: 100%
+
 //header
 header
   .container
@@ -306,30 +316,85 @@ header
   position: fixed
   z-index: 5
   top: 0
-  left: 0
+  right: 0
   max-width: 290px
   width: 100%
   height: 100%
   overflow-y: auto
   background: #fcfcfc
-  padding: 30px
+  padding: 30px 0
   display: none
   box-shadow: 0 5px 10px rgba(#000, .3)
-  .logo
-    margin: 20px 0 30px
   .menu
     flex-direction: column
     align-items: flex-start
     li
       margin: 0 0 10px
-  .language-box
-    margin: 20px 0 0
+      border-bottom: 1px solid #e1e2e3
+      width: 100%
+      a
+        padding: 10px 20px
+        color: #010101
+
+  .list-social
+    margin: 40px 0 20px
+    padding: 0 20px
+    li
+      a
+        width: 40px
+        height: 40px
+        background: #e4e5e6
+        fill: #000
+        padding: 10px
+
+.dropdown
+  position: relative
+  width: 100%
+
+.dropdown-toggle
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 10px 20px
+  border-bottom: 1px solid #e1e2e3
+
+.dropdown-menu
+  padding: 0 0 0 20px
+  display: none
+
+
+.dropdown-item
+  color: #6c7278
+  border-bottom: 1px solid #e1e2e3
+  padding: 10px 20px
+
+.dropdown-toggle__icon
+  width: 20px
+  height: 20px
+  display: none
+  align-items: center
+  justify-content: center
+  position: relative
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #000
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
 
 .btn-close
   width: 20px
   height: 20px
   position: relative
-  margin: 0 0 0 auto
+  margin: 0 20px 0 auto
   cursor: pointer
   &:before, &:after
     content: ''
@@ -380,6 +445,12 @@ header
   .news-card
     &__title
       color: #010101
+  .box-text
+    margin: 48px auto 0
+    padding: 0 30px 10px
+    font-size: 14px
+    border-bottom: 1px solid #f2a800
+
 
 .list-social-subscribe
   width: 100%
@@ -586,6 +657,12 @@ header
       justify-content: center
       fill: #bdbdbd
       transform: scale(-1,1)
+    .svg-icon-bookmark
+      width: 46px
+      height: 46px
+      fill: #fff
+      background: $red
+      padding: 10px
 
 .slick-slider
   width: 100%
@@ -786,6 +863,462 @@ footer
       justify-content: center
       fill: #868686
       margin: 0 5px 0 0
+
+//page 404
+.error
+  position: relative
+  padding: 134px 0 240px
+  background: url("../img/bg-404.png") no-repeat left bottom
+    size: 1021px
+
+  .container
+    flex-direction: column
+    align-items: center
+  h1
+    width: 100%
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 216px
+    margin: 0 auto 94px
+    font-weight: bold
+    font-family: $font
+  .subtitle
+    text-align: center
+    font-size: 30px
+    font-weight: bold
+    width: 100%
+    margin: 0 auto 24px
+  .box-text
+    text-align: center
+    font-size: 12px
+    font-weight: bold
+    color: #919191
+    line-height: 1.5
+  .btn
+    height: 41px
+    max-width: 366px
+    width: 100%
+    margin: 43px auto 0
+
+.color-red
+  color: #dc2129
+
+.color-blue
+  color: #204195
+
+.color-orange
+  color: #f4a81d
+
+
+//page
+.page
+  padding: 20px 0 0
+
+.breadcrumb
+  margin: 30px 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  font-size: 16px
+  color: #0033a0
+  li
+    a
+      color: #010101
+      display: flex
+      align-items: center
+      &:after
+        content: '/'
+        display: inline-block
+        margin: 0 5px
+
+.container-my
+  max-width: 1130px
+
+//.page-solider
+.page-solider
+  padding: 20px 0
+
+.solider-wrapper
+  .container
+    max-width: 1300px
+
+.solider-box
+  margin: 0 0 50px
+  padding: 0 30px
+  width: 20%
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 15px
+  h3
+    font-weight: bold
+    font-size: 20px
+
+.solider-menu
+  line-height: 1.63
+  li
+    a
+      color: #313131
+      &:hover
+        color: $red
+
+.links-all
+  font-style: italic
+  margin: 11px 0 0
+  color: #262626
+  font-size: 12px
+  &:hover
+    color: $red
+
+.row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 -30px
+
+.btn-toggle-plus
+  cursor: pointer
+  display: none
+  align-items: center
+  justify-content: center
+  width: 20px
+  height: 20px
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 1px
+    height: 100%
+    border-radius: 4px
+    background: #262626
+  &:before
+    width: 100%
+    height: 1px
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+  &:after
+    left: 50%
+    transform: translate(-50%,0)
+
+
+.btn-toggle-plus.click
+  transform: rotate(45deg)
+
+//page-history
+.page-history
+  .content
+    padding-bottom: 70px
+  .breadcrumb
+    color: #d90012
+
+.row-my
+  margin: 0 -15px
+
+.col-6
+  width: 50%
+  padding: 0 15px
+
+.history-box
+  margin: 0 0 40px
+  width: 100%
+  &__img
+    width: 100%
+    height: 237px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 26px 0 0
+  &__title
+    font-size: 24px
+    font-weight: bold
+    color: #010101
+    margin: 0 0 23px
+  .box-text
+    color: #919191
+    font-size: 13px
+    max-width: 310px
+    width: 100%
+  &__footer
+    width: 100%
+    margin: 17px 0 0
+    padding: 18px 0 0
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 40px
+      height: 1px
+      background: #dfdfdf
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 10px 0
+  font-size: 14px
+  font-weight: bold
+  li
+    margin: 0 6px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 34px
+      height: 34px
+      min-width: 34px
+      border: 1px solid #262626
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #010101
+      &:hover
+        color: $orange
+    .pagination-nav
+      width: auto
+      padding: 0 10px
+    .svg-icon
+      width: 10px
+      height: 10px
+      transform: rotate(90deg)
+      margin: 4px 0 0 6px
+    .active
+      background: #262626
+      color: #fff
+
+//history article
+.banner-article
+  width: 100%
+  margin: 0 0 46px
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  max-height: 593px
+  overflow: hidden
+  img
+    width: 100%
+
+.page-history-article
+  h1
+    margin: 0 0 19px
+
+.history-article-box
+  .box-text
+    color: #313131
+    line-height: 32px
+    margin: 40px 0 0
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.history-article-box__img
+  margin: 40px 0
+  width: 100%
+  img
+    width: 100%
+
+.gallery-slider
+  margin: 40px 0 0
+
+.gallery-slider__item
+  width: 182px
+  height: 182px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.share
+  margin: 66px 0 0
+  border-top: 1px solid #e8e8e8
+  border-bottom: 1px solid #e8e8e8
+  padding: 13px 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  color: #bdbdbd
+  font-size: 12px
+
+.list-share
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 17px
+  li
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 40px
+      height: 40px
+      background: #e4e5e6
+      padding: 10px
+
+.page-news
+  .news-card
+    &__img
+      width: 361px
+      height: 237px
+    &__body
+      width: calc(100% - 361px)
+    &__title
+      font-size: 24px
+      font-weight: bold
+      color: #010101
+      &:hover
+        color: $blue
+    &__date
+      position: relative
+      margin: 17px 0 0
+      padding: 18px 0 0
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 40px
+        height: 1px
+        background: #dfdfdf
+
+//solider-single
+.solider-single
+  padding: 0 0 70px
+  .article-box__date
+    font-size: 16px
+    font-weight: 500
+    color: #313131
+    font-family: $font
+    font-style: italic
+  .svg-icon-bookmark
+    margin: 0 14px 0 0
+    transform: none
+
+
+.video-box
+  width: 100%
+  max-width: 795px
+  margin: 40px 0
+  height: 494px
+  iframe
+    width: 100%
+    height: 100%
+
+.gallery-slider-solider
+  .slick-slide
+    padding: 0 10px
+  .gallery-slider__item
+    height: 274px
+    width: 100%
+
+.attention-card
+  margin: 60px auto 0
+  width: 100%
+  max-width: 768px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  background: #262626
+  color: #fff
+  padding: 20px
+  &__img
+    width: 164px
+    height: 164px
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+  &__body
+    width: calc(100% - 164px)
+    padding: 0 0 0 20px
+  h3
+    font-weight: bold
+    margin: 0 0 7px
+  .date
+    font-size: 12px
+    color: #a0a0a0
+  .list-social
+    margin: 18px 0 22px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    li
+      a
+        fill: #b0b0b0
+        width: 12px
+        height: 12px
+  .box-text
+    line-height: 1.46
+    font-size: 13px
+    color: #fff
+    margin: 0
+
+.article-navigation
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: bold
+  margin: 40px 0 0
+  border:
+    top: 1px solid #e8e8e8
+    bottom: 1px solid #e8e8e8
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 26px
+    height: 26px
+    border-radius: 50%
+    border: 1px solid #919191
+    padding: 5px
+    fill: #919191
+  li
+    width: 50%
+    border-right: 1px solid #e8e8e8
+    &:last-child
+      border: none
+      a
+        padding: 26px 0 26px 30px
+    a
+      width: 100%
+      padding: 26px 30px 26px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      color: #919191
+      &:hover
+        color: #010101
+      .article-navigation__icon
+        fill: #010101
+        border-color: #010101
 
 
 @import "media"
