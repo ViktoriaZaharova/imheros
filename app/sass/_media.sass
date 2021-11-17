@@ -100,8 +100,9 @@
       width: 180px
       height: 150px
 
-  .page-history .content
-    padding: 0 0 30px
+  .page-history
+    .content
+      padding: 0 0 30px
 
   .page-news
     .content
@@ -231,6 +232,17 @@
     width: 50%
     margin: 0 0 30px
 
+  .article-navigation
+    li
+      width: 100%
+      border: none
+        bottom: 1px solid #e8e8e8
+      a
+        padding: 20px 20px 20px 0
+      &:last-child
+        a
+          padding: 20px 0 20px 20px
+
 @media only screen and (max-width: 480px)
   .subscribe-box h4
     font-size: 20px
@@ -279,6 +291,21 @@
       padding: 10px 0 0
       margin: 10px 0 0
 
+  .attention-card
+    &__img
+      width: 120px
+      height: 120px
+    &__body
+      width: calc(100% - 120px)
+    .list-social
+      margin: 10px 0
+    .box-text
+      margin: 0
+      font-size: 12px
+
+  .video-box
+    height: 300px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
   .solider-box
@@ -314,3 +341,10 @@
 
   .breadcrumb
     margin: 20px 0
+
+  .attention-card
+    &__img
+      width: 80px
+      height: 80px
+    &__body
+      width: calc(100% - 80px)
