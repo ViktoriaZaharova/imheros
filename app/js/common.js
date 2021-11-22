@@ -61,3 +61,11 @@ $('.gallery-slider').slick({
         }
     ]
 });
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 150) {
+        $('.btn-scroll-top').addClass('active');
+    } else {
+        $('.btn-scroll-top').removeClass('active');
+    }
+});

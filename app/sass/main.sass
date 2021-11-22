@@ -159,7 +159,7 @@ button, .btn
 
 
 .container
-  max-width: 1240px
+  max-width: 1236px
   width: 100%
   padding: 0 15px
   display: flex
@@ -170,6 +170,7 @@ button, .btn
 .box-text
   color: #919191
   line-height: 1.5
+  font-size: 16px
 
 h1
   width: 100%
@@ -191,7 +192,7 @@ header
     margin: 0 auto 0 0
 
 .header-top
-  padding: 13px 0
+  padding: 10px 0
   background: #fff
   border-bottom: 1px solid #e1e2e3
 
@@ -239,6 +240,7 @@ header
 .select
   letter-spacing: 0.28px
   appearance: none
+  height: auto
   border: none
     radius: 0
   color: #6c7278
@@ -284,7 +286,7 @@ header
   width: 49px
   height: 70px
   fill: #fff
-  display: flex
+  display: none
   align-items: center
   justify-content: center
   right: 83px
@@ -296,6 +298,9 @@ header
   .svg-icon
     width: 15px
     height: 15px
+
+.btn-scroll-top.active
+  display: flex
 
 .btn-burger
   cursor: pointer
@@ -506,6 +511,9 @@ header
     transform: translate(-50%,0)
     z-index: 1
     bottom: 23px
+    height: 50px
+    padding: 16px 20px
+    text-transform: uppercase
   img
     width: 100%
 
@@ -516,7 +524,7 @@ header
   color: #fff
   position: relative
   z-index: 1
-  padding: 67px 30px 70px
+  padding: 67px 9px 70px
   font-size: 16px
   &:before
     content: ''
@@ -533,13 +541,14 @@ header
     font-size: 24px
     font-weight: bold
     margin: 0 auto 78px
-    max-width: 280px
+    max-width: 300px
     width: 100%
   p
     text-align: center
 
 .form-subscribe
   width: 100%
+  max-width: 323px
   margin: 30px auto 0
   display: flex
   align-items: stretch
@@ -580,6 +589,7 @@ header
     margin: 0 0 30px
 
     h3
+      font-size: 18px
       color: #fff
       background: #d90012
       padding: 10px 29px 9px 19px
@@ -700,7 +710,7 @@ footer
   padding: 63px 0 37px
 
   .container
-    max-width: 1130px
+    max-width: 1160px
 
 .footer-bottom
   padding: 30px 0
@@ -713,6 +723,8 @@ footer
   margin: 24px 0 0
   color: #868686
   font-size: 13px
+  .text
+    font-family: 'MyriadPro', sans-serif
 
 .menu
   display: flex
@@ -943,7 +955,7 @@ footer
 
 .solider-wrapper
   .container
-    max-width: 1300px
+    max-width: 1440px
 
 .solider-box
   margin: 0 0 50px
@@ -961,6 +973,7 @@ footer
 
 .solider-menu
   line-height: 1.63
+  font-size: 16px
   li
     a
       color: #313131
@@ -1094,6 +1107,7 @@ footer
     .pagination-nav
       width: auto
       padding: 0 10px
+      font-size: 13px
     .svg-icon
       width: 10px
       height: 10px
@@ -1186,6 +1200,9 @@ footer
       height: 237px
     &__body
       width: calc(100% - 361px)
+    .box-text
+      font-size: 13px
+      line-height: 1.62
     &__title
       font-size: 24px
       font-weight: bold
@@ -1259,6 +1276,7 @@ footer
     padding: 0 0 0 20px
   h3
     font-weight: bold
+    font-size: 16px
     margin: 0 0 7px
   .date
     font-size: 12px

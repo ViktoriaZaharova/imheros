@@ -5,6 +5,13 @@
   src: url("../fonts/ArialArmenianMT/ArialArmenianMT.eot");
   src: url("../fonts/ArialArmenianMT/ArialArmenianMT.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialArmenianMT/ArialArmenianMT.woff") format("woff"), url("../fonts/ArialArmenianMT/ArialArmenianMT.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "MyriadPro";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -177,7 +184,7 @@ button, .btn {
   height: 100%; }
 
 .container {
-  max-width: 1240px;
+  max-width: 1236px;
   width: 100%;
   padding: 0 15px;
   display: -webkit-box;
@@ -190,7 +197,8 @@ button, .btn {
 
 .box-text {
   color: #919191;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 16px; }
 
 h1 {
   width: 100%;
@@ -212,7 +220,7 @@ header .logo {
   margin: 0 auto 0 0; }
 
 .header-top {
-  padding: 13px 0;
+  padding: 10px 0;
   background: #fff;
   border-bottom: 1px solid #e1e2e3; }
 
@@ -278,6 +286,7 @@ header .logo {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  height: auto;
   border: none;
     border-radius: 0;
   color: #6c7278;
@@ -330,9 +339,7 @@ header .logo {
   width: 49px;
   height: 70px;
   fill: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -346,6 +353,11 @@ header .logo {
   .btn-scroll-top .svg-icon {
     width: 15px;
     height: 15px; }
+
+.btn-scroll-top.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .btn-burger {
   cursor: pointer;
@@ -585,7 +597,10 @@ header .logo {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     z-index: 1;
-    bottom: 23px; }
+    bottom: 23px;
+    height: 50px;
+    padding: 16px 20px;
+    text-transform: uppercase; }
   .banner img {
     width: 100%; }
 
@@ -596,7 +611,7 @@ header .logo {
   color: #fff;
   position: relative;
   z-index: 1;
-  padding: 67px 30px 70px;
+  padding: 67px 9px 70px;
   font-size: 16px; }
   .subscribe-box:before {
     content: '';
@@ -613,13 +628,14 @@ header .logo {
     font-size: 24px;
     font-weight: bold;
     margin: 0 auto 78px;
-    max-width: 280px;
+    max-width: 300px;
     width: 100%; }
   .subscribe-box p {
     text-align: center; }
 
 .form-subscribe {
   width: 100%;
+  max-width: 323px;
   margin: 30px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -666,6 +682,7 @@ header .logo {
     border-bottom: 2px solid #d90012;
     margin: 0 0 30px; }
     .article-wrapper__head h3 {
+      font-size: 18px;
       color: #fff;
       background: #d90012;
       padding: 10px 29px 9px 19px;
@@ -813,7 +830,7 @@ footer {
   background: #262626;
   padding: 63px 0 37px; }
   footer .container {
-    max-width: 1130px; }
+    max-width: 1160px; }
 
 .footer-bottom {
   padding: 30px 0; }
@@ -829,6 +846,8 @@ footer {
   margin: 24px 0 0;
   color: #868686;
   font-size: 13px; }
+  .copyright .text {
+    font-family: 'MyriadPro', sans-serif; }
 
 .menu {
   display: -webkit-box;
@@ -1090,7 +1109,7 @@ footer {
   padding: 20px 0; }
 
 .solider-wrapper .container {
-  max-width: 1300px; }
+  max-width: 1440px; }
 
 .solider-box {
   margin: 0 0 50px;
@@ -1113,7 +1132,8 @@ footer {
     font-size: 20px; }
 
 .solider-menu {
-  line-height: 1.63; }
+  line-height: 1.63;
+  font-size: 16px; }
   .solider-menu li a {
     color: #313131; }
     .solider-menu li a:hover {
@@ -1273,7 +1293,8 @@ footer {
         color: #f2a800; }
     .pagination li .pagination-nav {
       width: auto;
-      padding: 0 10px; }
+      padding: 0 10px;
+      font-size: 13px; }
     .pagination li .svg-icon {
       width: 10px;
       height: 10px;
@@ -1393,6 +1414,10 @@ footer {
 .page-news .news-card__body {
   width: calc(100% - 361px); }
 
+.page-news .news-card .box-text {
+  font-size: 13px;
+  line-height: 1.62; }
+
 .page-news .news-card__title {
   font-size: 24px;
   font-weight: bold;
@@ -1477,6 +1502,7 @@ footer {
     padding: 0 0 0 20px; }
   .attention-card h3 {
     font-weight: bold;
+    font-size: 16px;
     margin: 0 0 7px; }
   .attention-card .date {
     font-size: 12px;
