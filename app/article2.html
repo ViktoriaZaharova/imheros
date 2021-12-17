@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>imheros</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <ul class="menu">
+    <li><a href="#">ԳԼԽԱՎՈՐ</a></li>
+    <li><a href="#">ԻՄ ՀԵՐՈՍ</a></li>
+    <li><a href="#">Պատմություններ</a></li>
+    <li><a href="#">ՆՈՐՈՒԹՅՈՒՆՆԵՐ</a></li>
+  </ul>
+
+  <ul class="list-social">
+    <li><a href="#" class="links-fb">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#fb"></use>
+      </svg>
+    </a></li>
+    <li><a href="#" class="links-youtube">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#youtube"></use>
+      </svg>
+    </a></li>
+  </ul>
+
+  <div class="language-box dropdown">
+    <div class="dropdown-toggle">
+      <span class="dropdown-toggle__text">Լեզուներ</span>
+      <span class="dropdown-toggle__icon"></span>
+    </div>
+    <div class="dropdown-menu">
+      <a href="#" class="dropdown-item">Հայերեն</a>
+      <a href="#" class="dropdown-item">Ռուսերեն</a>
+      <a href="#" class="dropdown-item">Անգլերեն</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <a href="index.html" class="logo box-mobile"><img src="img/logo.png" alt=""></a>
+
+      <div class="language-box">
+        <select name="select" class="select">
+          <option value="Հայերեն">Հայերեն</option>
+          <option value="Հայերեն">Հայերեն</option>
+          <option value="Հայերեն">Հայերեն</option>
+          <option value="Հայերեն">Հայերեն</option>
+        </select>
+      </div>
+
+      <div class="date-current">Չորեքշաբթի, Նոյեմբերի 3, 2021</div>
+      <ul class="list-social">
+        <li><a href="#" class="links-fb">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a></li>
+        <li><a href="#" class="links-youtube">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg>
+        </a></li>
+      </ul>
+
+      <div class="btn-burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-bottom">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+      <form class="form form-search">
+        <label>
+          <input type="text" placeholder="Որոնել այստեղ" name="search">
+          <button type="submit" class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </label>
+      </form>
+
+      <div class="date-current box-mobile">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#calendar"></use>
+        </svg>
+        Չորեքշաբթի, Նոյեմբերի 3, 2021
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page page-history solider-single article-page">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Գլխավոր</a></li>
+      <li><a href="history.html">Իմ հերոս</a></li>
+      <li><span class="color-orange">Հայկազ Մկրտչյան</span></li>
+    </ul>
+
+    <div class="article-page-wrapper">
+      <a href="img/img2.jpg" data-fancybox="image" class="image-inline">
+      <img src="img/img2.jpg" alt=""></a>
+      <h1>Հայկազ Մկրտչյան</h1>
+      <div class="article-box__date">
+        <svg class="svg-icon svg-icon-bookmark">
+          <use xlink:href="img/sprite.svg#bookmark"></use>
+        </svg>
+        <div class="article-box__date-text">31.10.2000 - 09.11.2020</div>
+      </div>
+      <p>Ծնվել է 2000 թ․ հոկտեմբերի 31-ին Երևանում։ Ավարտել Գևորգ Էմինի անվան թիվ 182 ավագ դպրոցը։ Զբաղվել է շախմատով,
+        մասնակցել բազմաթիվ
+        մրցաշարերի՝ գրանցելով հաջողություններ։ Ավագ դպրոցին զուգահեռ սովորել է Սլավոնական համալսարանի նախապատրաստական
+        կուրսում։ 2018 թ.
+        ընդունվել Երևանի պետական համալսարանի ինֆորմատիկայի և կիրառական մաթեմատիկայի ֆակուլտետը։</p>
+
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+        ծառայություն, որպես հաշվարկի
+        հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+    </div>
+
+    <div class="banner-article"></div>
+
+    <div class="history-article-box w-100">
+      <h1>Հայկազ Մկրտչյան</h1>
+      <div class="article-box__date">
+        <svg class="svg-icon svg-icon-bookmark">
+          <use xlink:href="img/sprite.svg#bookmark"></use>
+        </svg>
+        <div class="article-box__date-text">31.10.2000 - 09.11.2020</div>
+      </div>
+
+      <div class="box-text">
+        <p>Ծնվել է 2000 թ․ հոկտեմբերի 31-ին Երևանում։ Ավարտել Գևորգ Էմինի անվան թիվ 182 ավագ դպրոցը։ Զբաղվել է շախմատով,
+          մասնակցել բազմաթիվ
+          մրցաշարերի՝ գրանցելով հաջողություններ։ Ավագ դպրոցին զուգահեռ սովորել է Սլավոնական համալսարանի նախապատրաստական
+          կուրսում։ 2018 թ.
+          ընդունվել Երևանի պետական համալսարանի ինֆորմատիկայի և կիրառական մաթեմատիկայի ֆակուլտետը։</p>
+
+        <p>2019 թ. հունվարի 23-ին զորակոչվել է Հայոց Բանակ։ Վեց ամիս Լուսակերտի զորամասում անցնելով ուումնական
+          ծառայություն, որպես հաշվարկի
+          հրամանատար անցել է ծառայության Տավուշում, մասնակցել Տավուշյան պատերազմին:</p>
+      </div>
+
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/np2fnDmvnfQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+
+      <div class="box-text">
+        <p>Հոկտեմբերի 14-ից մարտկոցով շտապ տեղափոխվել է Արցախ՝ Ծակուռի գյուղ: Առաջին անգամն էր Հզոր Արցախում, սիրահարվեց
+          և հստակ որոշում
+          կայացրեց, որ ապրելու է Արցախում։</p>
+
+        <p>Հոկտեմբերի 29֊ին Բայրակթարի հարվածից Կամիր շուկայի մոտակայքում վիրավորվել է, անգիտակից տեղափոխվել հիվանդանոց,
+          12 օր պայքարել,
+          սակայն նոյեմբերի իննին հոգին հանձնել Աստծուն։</p>
+      </div>
+
+      <div class="gallery-slider w-100 gallery-slider-solider">
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news9.jpg" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news8.jpg" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news9.jpg" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news8.jpg" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news10.jpg" alt=""></div>
+        </div>
+        <div class="slide">
+          <div class="gallery-slider__item"><img src="img/news11.jpg" alt=""></div>
+        </div>
+      </div>
+
+      <div class="attention-card">
+        <div class="attention-card__img"><img src="img/img2.jpg" alt=""></div>
+        <div class="attention-card__body">
+          <h3>Հայկազ Մկրտչյան</h3>
+          <div class="date">31.10.2000 - 09.11.2020</div>
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a></li>
+          </ul>
+
+          <div class="box-text">
+            <p>Հոկտեմբերի 29֊ին Բայրակթարի հարվածից Կամիր շուկայի մոտակայքում
+              վիրավորվել է, անգիտակից տեղափոխվել հիվանդանոց, 12 օր պայքարել, սակայն
+              նոյեմբերի իննին հոգին հանձնել Աստծուն։</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="share">
+        <p>Տարածել՝ </p>
+        <ul class="list-share">
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#fb"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#twitter"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#pinterest"></use>
+            </svg>
+          </a></li>
+          <li><a href="#">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#linkedin"></use>
+            </svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <ul class="article-navigation">
+        <li class="article-navigation__item">
+          <a href="#" class="article-navigation__links">
+            <span class="article-navigation__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+            <span class="article-navigation__text">Նախորդ զինվորի անուն ազգանունը</span>
+          </a>
+        </li>
+        <li class="article-navigation__item">
+          <a href="#" class="article-navigation__links">
+            <span class="article-navigation__text">Հաջորդ զինվորի անուն ազգանունը</span>
+            <span class="article-navigation__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-col">
+        <div class="footer-item">
+          <div class="title-line">
+            <h3>Մեր մասին</h3>
+            <div class="title-line-decor bg-red"></div>
+          </div>
+          <div class="box-text">
+            <p>Կազմակերպության մասին - Հայտնի է, որ
+              ընթերցողը, կարդալով հասկանալի տեքստ, չի
+              կարողանա կենտրոնանալ տեքստի ձևավորման
+              վրա: Lorem Ipsum օգտագործելը բացատրվում է
+              նրանով, որ այն բաշխում է բառերը քիչ թե շատ
+              իրականի նման, ի տարբերություն «Բովանդակություն,
+              բովանդակություն» սովորական կրկննության։</p>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="title-line">
+            <h3>մեր կոնտակտները</h3>
+            <div class="title-line-decor bg-blue"></div>
+          </div>
+          <a href="tel:099008113" class="phone contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+            <span class="contacts-links__text">ՀԵՌԱԽՈՍԱՀԱՄԱՐ։ 099008113</span></a>
+
+          <a href="mailto:info@imheros.am" class="phone contacts-links">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
+            <span class="contacts-links__text">
+            Էլ. հասցե։ info@imheros.am</span></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-item">
+          <div class="title-line">
+            <h3>մեր կոնտակտները</h3>
+            <div class="title-line-decor bg-yellow"></div>
+          </div>
+
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/news3.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Նորության վերնագիր</a>
+              <div class="news-card__date">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                <span>Նոյեմբերի 3,2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/news4.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Նորության վերնագիր
+                Նորության վերնագիր</a>
+              <div class="news-card__date">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                <span>Նոյեմբերի 2,2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/news2.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Նորության վերնագիր
+                Նորության վերնագիր
+                Նորության վերնագիր</a>
+              <div class="news-card__date">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                <span>Նոյեմբերի 1,2021</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <a href="#" class="news-card__img"><img src="img/news4.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="#" class="news-card__title">Նորության վերնագիր</a>
+              <div class="news-card__date">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+                <span>Հոկտեմբեր 31,2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-item">
+          <div class="title-line">
+            <h3>Հետեվիր մեզ ֆեյսբուքում</h3>
+            <div class="title-line-decor bg-red"></div>
+          </div>
+
+          <a href="#" class="envato-box"><img src="img/envato.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom__box">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        <div class="copyright"><span class="text">© 2021.</span> Բոլոր իրավունքները պաշտպանված են</div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#">ԳԼԽԱՎՈՐ</a></li>
+        <li><a href="#">ԻՄ ՀԵՐՈՍ</a></li>
+        <li><a href="#">Պատմություններ</a></li>
+        <li><a href="#">ՆՈՐՈՒԹՅՈՒՆՆԵՐ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="btn-scroll-top">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#double-arrow"></use>
+  </svg>
+</a>
+
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

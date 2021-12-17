@@ -1,0 +1,45 @@
+@import "fonts"
+@import "vars"
+
+.image-inline
+  display: inline-block
+  float: left
+  margin: 0 20px 0 0
+  max-width: 40%
+
+
+.article-page-wrapper
+  p
+    margin: 20px 0 0
+    line-height: 32px
+    font-size: 16px
+    color: #313131
+
+.pagination
+  li
+    .pagination-nav-prev
+      .svg-icon
+        transform: rotate(-90deg)
+        margin: 4px 6px 0 0
+
+
+
+@media (max-width: 576px)
+  .image-inline
+    max-width: none
+    width: 100%
+    margin: 0 0 20px
+
+  .article-navigation
+    li
+      a
+        text-align: left
+        justify-content: flex-start
+      .article-navigation__icon
+        margin: 0 10px 0 0
+      &:last-child
+        a
+          justify-content: flex-end
+          text-align: right
+        .article-navigation__icon
+          margin: 0 0 0 10px
